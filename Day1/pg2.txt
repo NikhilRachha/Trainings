@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int ProductId = 0;
+            string ProductName = "";
+            int UnitPrice = 0;
+            int Quantity = 0;
+            int TotalCost = 0;
+            double DiscountAmount = 0;
+            double FinalAmount = 0;
+            Console.WriteLine("Enter Product Id:");
+            ProductId = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Product Name:");
+            ProductName = Console.ReadLine();
+            Console.WriteLine("Enter Unit Price:");
+            UnitPrice = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Quantity:");
+            Quantity = int.Parse(Console.ReadLine());
+            if(Quantity>0 && Quantity <= 10)
+            {
+                FinalAmount = UnitPrice * Quantity;
+            }
+            else if(Quantity>10 && Quantity<=30) {
+                TotalCost = UnitPrice * Quantity;   
+                DiscountAmount = TotalCost*0.1;
+                FinalAmount = TotalCost - DiscountAmount;
+            }
+            else if (Quantity > 30 && Quantity <= 50)
+            {
+                TotalCost = UnitPrice * Quantity;
+                DiscountAmount = TotalCost * 0.2;
+                FinalAmount = TotalCost - DiscountAmount;
+            }
+            else
+            {
+                TotalCost = UnitPrice * Quantity;
+                DiscountAmount = TotalCost * 0.3;
+                FinalAmount = TotalCost - DiscountAmount;
+            }
+            Console.WriteLine("\n");
+            Console.WriteLine("Product Id: {0}\nProduct Name : {1}\nUnit Price : {2}\nQuantity : {3}\nTotal Amount : {4}\nDiscount Amount : {5}\nFinal Amount : {6}",ProductId,ProductName,UnitPrice,Quantity,TotalCost,DiscountAmount,FinalAmount);
+            Console.ReadLine();
+        }
+    }
+}

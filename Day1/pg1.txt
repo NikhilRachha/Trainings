@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string uname1 = "nikhil";
+            string pass1 = "1858";
+            string uname = "";
+            string pass = "";
+            Console.WriteLine("Enter User Name");
+            uname = Console.ReadLine();
+            Console.WriteLine("Enter Password");
+            pass = Console.ReadLine();
+            if (pass == pass1 && uname == uname1)
+            {
+                Console.WriteLine("Successfully logged In");
+            }
+            else
+            {
+                Console.WriteLine("Incorrect,Check Username and Password");
+            }
+
+         Console.ReadLine();
+        }
+    }
+}
