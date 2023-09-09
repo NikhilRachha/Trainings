@@ -1,0 +1,21 @@
+Yes,we can write multiple catch blocks using a single try.When we implement multiple catch blocks in C#
+for a given try block, then at any given point of time only one catch block is going to be executed and 
+other catch blocks will be ignored.
+For Example
+ try
+    {
+        Console.WriteLine("Enter num1 :");
+        Num1 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter num2");
+        Num2 = int.Parse(Console.ReadLine());
+        ans = Num1/Num2;
+        Console.WriteLine("ans:"+ans);
+     }
+ catch (DivideByZeroException e)
+     {
+        Console.WriteLine("division by zero is not possible");
+     }
+ catch (FormatException e)
+     {
+        Console.WriteLine("Enter correct values");
+     }
