@@ -1,0 +1,7 @@
+Ans. The Object class is the base class for all the classes in the .Net Framework. It is present 
+in the System namespace. Every class in C# is directly or indirectly derived from the Object
+class. If a class does not extend any other class then it is the direct child class of the Object
+class and if extends another class then it is indirectly derived. Therefore the Object class 
+methods are available to all C# classes. Hence Object class acts as a root of the inheritance 
+hierarchy in any C# Program. The main purpose of the Object class is to provide low-level services
+to derived classes. 
