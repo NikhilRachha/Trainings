@@ -1,0 +1,19 @@
+﻿@using WebApplication3.Models
+@model List<Product>
+@{
+   <table border="1">
+   <tr>
+      <th>ProductId</th>
+      <th>ProductName</th>
+      <th>ProductName</th>
+   </tr>
+        @foreach(Product pd in Model)
+        {
+            <tr>
+                 <td>@pd.ProductId</td>
+                 <td>@pd.ProductName</td>
+                 <td>@pd.ProductPrice</td>
+            </tr>
+        }
+    </table>
+}

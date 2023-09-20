@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <form method="post">
+    <table>
+    <tr>
+                <td>Product Name :</td>
+                <td><input type="text" name="ItemName"></td>
+    </tr>
+     <tr>
+                <td>Unit Price   :</td>
+                <td><input type="number" name="ItemPrice"></td>
+    </tr>
+            <tr>
+                <td>Quantity     :</td>
+                <td><input type="number" name="ItemQuantity"></td>
+            </tr>
+            <tr>
+                <td><input type="Submit" value="Submit"></td>
+            </tr>
+            <tr>
+                <td><p>The Final Amount is @ViewBag.Message</p></td>
+            </tr>
+    </table>
+    </form>
+}
