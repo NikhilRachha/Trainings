@@ -17,7 +17,19 @@ namespace ConsoleApp1
             Console.WriteLine("Enter User Name");
             uname = Console.ReadLine();
             Console.WriteLine("Enter Password");
-            pass = Console.ReadLine();
+
+            ConsoleKeyInfo key;
+            string pass = "";
+            do
+            {
+                key = Console.ReadKey(true);
+                if (key.Key != ConsoleKey.Enter)
+                {
+                    pass += key.KeyChar;
+                    Console.Write("*");
+                }
+            } while (key.Key != ConsoleKey.Enter);
+           
             if (pass == pass1 && uname == uname1)
             {
                 Console.WriteLine("Successfully logged In");
