@@ -1,0 +1,19 @@
+.table1{
+    border:1px solid black;
+    width:40%;
+    margin:5px;
+}
+tr{
+    border:1px solid black;
+}
+td{
+    border:1px solid black;
+}
+.content{
+    width:200px;
+    height:125px;
+    text-align:left;
+    float: left;
+    margin:3px;
+    padding:4px;
+}
