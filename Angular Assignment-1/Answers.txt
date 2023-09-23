@@ -1,0 +1,12 @@
+1.the ngIf directive is a structural directive that conditionally includes a template based on the value of
+an expression coerced to Boolean. When the expression evaluates to true, Angular renders the template 
+provided in a then clause, and when false or null, Angular renders the template provided in an optional
+else clause.
+Example:
+<div *ngIf="condition">Content to render when condition is true.</div>
+
+2.We can serve an image in angular2 by first placing the image in the assets directory of your project where
+you can create a specific directory for the images or just keep it in the assets directory as it is.Once you
+ have put all the required images in the assets directory open the specific component typescript (.ts) file 
+where you want to serve the image. Now you can add the URL of the image in a variable within the constructor
+so that it is initialized upon component creation.
